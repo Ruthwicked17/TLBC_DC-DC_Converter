@@ -1,0 +1,71 @@
+CALCULATIONS :-
+
+given values :
+
+Vin = 21.5 V         5% ripple
+Pin = 45 W
+Iin = 2.88 A         20% ripple
+Vout = 96 V
+Efficiency = 95%
+Fs (switching frequency) = 20 Hz
+
+Time period = 1/Fs = 1/20000 = 0.00005 s
+
+Output power = 95/100 * 45 
+             = 42.75 W
+             
+Duty Ratio 
+D for a three level boost conveter 
+Vout/Vin = 3/(1-D)
+96/21.5 = 3/1-D
+D = 0.328125
+
+Iin = 2.88 A
+ripple is 20%
+ripple current = 0.2*2.88 A
+               = 0.576 A 
+Peak current = 2.88 + 0.576 
+             = 3.456 A
+
+calcualtion of boost coverter inductance value
+
+L = ( Vout * Ts )/ (16 * ∆i)
+  = ( 96*0.00005)/16*0.576
+  = 0.5275 mH
+
+L = 520.75 uH
+
+Vout = 96v
+ripple 5 %
+ripple voltage = 0.05*96
+               = 4.8v
+
+THREE LEVEL BOOST COVERTER HAS 2 CAPACITORS IN PARALLEL 
+HENCE THE VOLTAGE DROP ACROSS EACH CAPACITOR IS 2.4V
+
+CALCULATION OF CAPACITOR 
+
+C = ∆i * D /( Fs * ∆Vout )
+  = 0.576 *0.328125 / 20000 * 2.4
+  = 3.9375 uF
+  
+Voltage across each capacitor is Vout/2  = 48 V
+
+Inductor Design 
+
+GIVEN 
+Bm = 0.2T
+Kw = 0.35 
+J = 3 * 10 ^6 A/m^2
+Kc = 1
+
+AREA PRODUCT
+AcAw = 2E / (Bm*Kw*J*Kc)
+
+WHERE 
+E = 1/2 * L * I^2
+  = 0.5 * 0.50275 mH * ( 3.456) ^2
+  = 0.0031502
+  
+AcAw = 2*0.0031502/(0.35* 0.2 * 3*10^6 * 1)
+     = 29618.1174 mm^4
