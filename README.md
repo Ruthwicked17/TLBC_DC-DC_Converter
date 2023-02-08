@@ -9,7 +9,8 @@ So in this project we will work in performance analysis of a TLBC for a photovol
 and also understand its modes of operation
 
 ## Objective
-The primary objective of this project is to design, implement and test a three level boost converter with MPPT for PV energy conversion using the technique incremental conductance.
-This project will be done from scratch with the objective of maximum learning about the concepts. 
-Analyze the performance of the three level boost converter.
+* understanding the basics of three level boost converter 
+* understanding maximum power point tracking 
+* Design, implement and test a three level boost converter with MPPT for PV energy conversion using the technique incremental conductance.
+* Analyze the performance of the three level boost converter.
 
